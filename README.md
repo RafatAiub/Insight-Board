@@ -9,7 +9,7 @@
 
 **A stunning, production-ready analytics dashboard showcasing advanced React patterns, TypeScript mastery, and beautiful data visualization.**
 
-[Live Demo](#) • [Features](#-features) • [Quick Start](#-quick-start) • [Tutorial](#-tutorial) • [Architecture](#-architecture)
+[Live Demo](https://insight-board-pearl.vercel.app/) • [Features](#-features) • [Quick Start](#-quick-start) • [Tutorial](#-tutorial) • [Architecture](#-architecture)
 
 </div>
 
