@@ -1,0 +1,32 @@
+[
+  {
+    "id": "s_optimistic",
+    "name": "Optimistic Growth",
+    "description": "Aggressive marketing push increasing MRR by 15% but also increasing Burn Rate by 10%.",
+    "isActive": false,
+    "adjustments": [
+      { "metricId": "m_mrr", "type": "growth_delta", "value": 0.15 },
+      { "metricId": "m_burn_rate", "type": "growth_delta", "value": 0.10 }
+    ]
+  },
+  {
+    "id": "s_recession",
+    "name": "Market Downturn",
+    "description": "Churn spikes by 50% and MRR drops by 10%.",
+    "isActive": false,
+    "adjustments": [
+      { "metricId": "m_churn", "type": "growth_delta", "value": 0.50 },
+      { "metricId": "m_mrr", "type": "growth_delta", "value": -0.10 }
+    ]
+  },
+  {
+    "id": "s_efficiency",
+    "name": "Efficiency Drive",
+    "description": "Reduce Burn Rate by 20% by cutting CAC.",
+    "isActive": false,
+    "adjustments": [
+      { "metricId": "m_burn_rate", "type": "growth_delta", "value": -0.20 },
+      { "metricId": "m_cac", "type": "growth_delta", "value": -0.15 }
+    ]
+  }
+]

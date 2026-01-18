@@ -1,0 +1,62 @@
+[
+  {
+    "id": "m_mrr",
+    "name": "Monthly Recurring Revenue",
+    "type": "currency",
+    "category": "revenue",
+    "baselineValue": 150000,
+    "history": [
+      { "date": "2025-01-01", "value": 120000 },
+      { "date": "2025-02-01", "value": 125000 },
+      { "date": "2025-03-01", "value": 132000 },
+      { "date": "2025-04-01", "value": 141000 },
+      { "date": "2025-05-01", "value": 150000 }
+    ],
+    "description": "Total revenue generated from subscriptions."
+  },
+  {
+    "id": "m_burn_rate",
+    "name": "Monthly Burn Rate",
+    "type": "currency",
+    "category": "expense",
+    "baselineValue": 85000,
+    "history": [
+      { "date": "2025-01-01", "value": 80000 },
+      { "date": "2025-02-01", "value": 82000 },
+      { "date": "2025-03-01", "value": 83000 },
+      { "date": "2025-04-01", "value": 84000 },
+      { "date": "2025-05-01", "value": 85000 }
+    ],
+    "description": "Total operational expenses per month."
+  },
+  {
+    "id": "m_churn",
+    "name": "Churn Rate",
+    "type": "percentage",
+    "category": "growth",
+    "baselineValue": 2.4,
+    "history": [
+      { "date": "2025-01-01", "value": 2.1 },
+      { "date": "2025-02-01", "value": 2.2 },
+      { "date": "2025-03-01", "value": 2.3 },
+      { "date": "2025-04-01", "value": 2.5 },
+      { "date": "2025-05-01", "value": 2.4 }
+    ],
+    "description": "Percentage of customers cancelling subscriptions."
+  },
+  {
+    "id": "m_cac",
+    "name": "Customer Acquisition Cost",
+    "type": "currency",
+    "category": "efficiency",
+    "baselineValue": 250,
+    "history": [
+      { "date": "2025-01-01", "value": 240 },
+      { "date": "2025-02-01", "value": 245 },
+      { "date": "2025-03-01", "value": 248 },
+      { "date": "2025-04-01", "value": 250 },
+      { "date": "2025-05-01", "value": 250 }
+    ],
+    "description": "Average cost to acquire a new customer."
+  }
+]

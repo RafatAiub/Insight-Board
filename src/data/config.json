@@ -1,0 +1,6 @@
+{
+  "title": "InsightBoard Analytics",
+  "refreshRateMs": 30000,
+  "defaultScenarioId": null,
+  "currency": "USD"
+}
