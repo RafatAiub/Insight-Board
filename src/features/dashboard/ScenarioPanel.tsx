@@ -5,6 +5,8 @@ import { Button } from '../../components/ui/Button';
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/Card';
 import { SlidersHorizontal } from 'lucide-react';
 
+import type { Scenario, Metric } from '../../domain/types'; 
+
 export function ScenarioPanel() {
   const { setScenario, updateAdjustment, resetSimulation } = useAppActions();
   const { data, simulation } = useAppState();
@@ -34,7 +36,7 @@ export function ScenarioPanel() {
                     >
                         None (Baseline)
                     </Button>
-                    {data.scenarios.map((scenario) => (
+                    {data.scenarios.map((scenario: Scenario) => (
                          <Button 
                             key={scenario.id}
                             variant={activeScenarioId === scenario.id ? "primary" : "outline"}
@@ -69,7 +71,7 @@ export function ScenarioPanel() {
                     </p>
 
                     {/* Hacky demo: Show sliders for top 3 metrics to override their growth */}
-                    {data.metrics.slice(0, 3).map((metric) => {
+                    {data.metrics.slice(0, 3).map((metric: Metric) => {
                         // Find current adjustment
                         const currentAdj = simulation.customAdjustments[metric.id];
                         // Or simplify: just assume we are adjusting growth delta

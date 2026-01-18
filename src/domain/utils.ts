@@ -15,6 +15,7 @@ export function applyAdjustment(value: number, adjustment: Adjustment): number {
       return value * adjustment.value;
     default:
       const _exhaustiveCheck: never = adjustment.type;
+      return _exhaustiveCheck;
       return value;
   }
 }

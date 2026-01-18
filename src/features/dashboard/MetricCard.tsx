@@ -82,7 +82,7 @@ export function MetricCard({ metric, onClick }: MetricCardProps) {
         
         {/* Simple Sparkline could go here using metric.simulatedHistory */}
         <div className="mt-4 h-8 flex items-end gap-0.5">
-            {metric.simulatedHistory.map((point, i) => {
+            {metric.simulatedHistory.map((point) => {
                 // simple normalization for demo
                 const max = Math.max(...metric.simulatedHistory.map(p => p.value));
                 const min = Math.min(...metric.simulatedHistory.map(p => p.value));

@@ -1,4 +1,4 @@
-import type { AppData, MetricID, ScenarioID, Adjustment } from '../domain/types';
+import type { AppData, ScenarioID, Adjustment } from '../domain/types';
 
 export interface SimulationState {
   activeScenarioId: ScenarioID | null;

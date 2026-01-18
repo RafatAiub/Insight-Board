@@ -1,12 +1,19 @@
 import { useCallback } from 'react';
 import { useAppDispatch } from '../state/context';
 import type { Adjustment, ScenarioID } from '../domain/types';
+import { getData } from '../domain/dataService';
 
 export function useAppActions() {
   const dispatch = useAppDispatch();
 
   const loadData = useCallback(() => {
     dispatch({ type: 'INIT_LOAD' });
+    try {
+      const data = getData();
+      dispatch({ type: 'LOAD_SUCCESS', payload: data });
+    } catch (err) {
+      dispatch({ type: 'LOAD_ERROR', error: err instanceof Error ? err.message : 'Unknown error' });
+    }
   }, [dispatch]);
 
   const setScenario = useCallback((scenarioId: ScenarioID | null) => {
