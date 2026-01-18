@@ -12,7 +12,7 @@ export function useAppActions() {
       const data = getData();
       dispatch({ type: 'LOAD_SUCCESS', payload: data });
     } catch (err) {
-      dispatch({ type: 'LOAD_ERROR', error: err instanceof Error ? err.message : 'Unknown error' });
+      dispatch({ type: 'LOAD_ERROR', payload: err instanceof Error ? err.message : 'Unknown error' });
     }
   }, [dispatch]);
 
