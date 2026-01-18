@@ -7,6 +7,9 @@ import { MetricCard } from './MetricCard';
 import { Button } from '../../components/ui/Button';
 import { Loader2, RefreshCcw } from 'lucide-react';
 import { ScenarioPanel } from './ScenarioPanel';
+import { RevenueChart } from './RevenueChart';
+import { CustomerGrowthChart } from './CustomerGrowthChart';
+import { ChurnAnalysisChart } from './ChurnAnalysisChart';
 
 export function Dashboard() {
   const { loadData, redo, undo } = useAppActions();
@@ -68,17 +71,21 @@ export function Dashboard() {
         ))}
       </div>
       
-      {/* We will add charts and scenario builder in the next rows */}
-      <div className="mt-8 grid gap-4 md:grid-cols-7">
-        <div className="md:col-span-4 rounded-xl border border-neutral-800 bg-neutral-900/30 p-6 min-h-[400px]">
-            <h3 className="text-lg font-semibold mb-4">Revenue Trends</h3>
-            <div className="flex items-center justify-center h-full text-neutral-500">
-                Chart Placeholder
-            </div>
+      
+      {/* Charts Section */}
+      <div className="mt-8 grid gap-6 md:grid-cols-7">
+        <div className="md:col-span-4">
+          <RevenueChart scenarioMultiplier={hasChanges ? 1.1 : 1} />
         </div>
-        <div className="md:col-span-3 rounded-xl min-h-[400px]">
-             <ScenarioPanel />
+        <div className="md:col-span-3">
+          <ScenarioPanel />
         </div>
+      </div>
+
+      {/* Additional Charts */}
+      <div className="mt-6 grid gap-6 md:grid-cols-2">
+        <CustomerGrowthChart scenarioMultiplier={hasChanges ? 1.05 : 1} />
+        <ChurnAnalysisChart scenarioMultiplier={hasChanges ? 1.15 : 1} />
       </div>
     </Shell>
   );

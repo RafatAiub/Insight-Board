@@ -1,0 +1,136 @@
+{
+  "monthlyData": [
+    {
+      "month": "Jan 2025",
+      "monthIndex": 0,
+      "mrr": 120000,
+      "burnRate": 75000,
+      "churnRate": 2.1,
+      "cac": 280,
+      "customers": 480,
+      "newCustomers": 45,
+      "lostCustomers": 10
+    },
+    {
+      "month": "Feb 2025",
+      "monthIndex": 1,
+      "mrr": 125000,
+      "burnRate": 78000,
+      "churnRate": 2.3,
+      "cac": 270,
+      "customers": 500,
+      "newCustomers": 52,
+      "lostCustomers": 12
+    },
+    {
+      "month": "Mar 2025",
+      "monthIndex": 2,
+      "mrr": 132000,
+      "burnRate": 80000,
+      "churnRate": 2.0,
+      "cac": 265,
+      "customers": 528,
+      "newCustomers": 58,
+      "lostCustomers": 11
+    },
+    {
+      "month": "Apr 2025",
+      "monthIndex": 3,
+      "mrr": 138000,
+      "burnRate": 82000,
+      "churnRate": 2.2,
+      "cac": 260,
+      "customers": 552,
+      "newCustomers": 48,
+      "lostCustomers": 12
+    },
+    {
+      "month": "May 2025",
+      "monthIndex": 4,
+      "mrr": 142000,
+      "burnRate": 83000,
+      "churnRate": 2.4,
+      "cac": 255,
+      "customers": 568,
+      "newCustomers": 42,
+      "lostCustomers": 14
+    },
+    {
+      "month": "Jun 2025",
+      "monthIndex": 5,
+      "mrr": 145000,
+      "burnRate": 84000,
+      "churnRate": 2.5,
+      "cac": 250,
+      "customers": 580,
+      "newCustomers": 38,
+      "lostCustomers": 15
+    },
+    {
+      "month": "Jul 2025",
+      "monthIndex": 6,
+      "mrr": 148000,
+      "burnRate": 85000,
+      "churnRate": 2.3,
+      "cac": 248,
+      "customers": 592,
+      "newCustomers": 44,
+      "lostCustomers": 14
+    },
+    {
+      "month": "Aug 2025",
+      "monthIndex": 7,
+      "mrr": 150000,
+      "burnRate": 85000,
+      "churnRate": 2.4,
+      "cac": 250,
+      "customers": 600,
+      "newCustomers": 40,
+      "lostCustomers": 14
+    },
+    {
+      "month": "Sep 2025",
+      "monthIndex": 8,
+      "mrr": 153000,
+      "burnRate": 86000,
+      "churnRate": 2.2,
+      "cac": 245,
+      "customers": 612,
+      "newCustomers": 46,
+      "lostCustomers": 13
+    },
+    {
+      "month": "Oct 2025",
+      "monthIndex": 9,
+      "mrr": 156000,
+      "burnRate": 87000,
+      "churnRate": 2.1,
+      "cac": 242,
+      "customers": 624,
+      "newCustomers": 50,
+      "lostCustomers": 13
+    },
+    {
+      "month": "Nov 2025",
+      "monthIndex": 10,
+      "mrr": 158000,
+      "burnRate": 88000,
+      "churnRate": 2.3,
+      "cac": 240,
+      "customers": 632,
+      "newCustomers": 42,
+      "lostCustomers": 14
+    },
+    {
+      "month": "Dec 2025",
+      "monthIndex": 11,
+      "mrr": 160000,
+      "burnRate": 89000,
+      "churnRate": 2.2,
+      "cac": 238,
+      "customers": 640,
+      "newCustomers": 48,
+      "lostCustomers": 14
+    }
+  ]
+}
